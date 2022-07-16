@@ -1,0 +1,175 @@
+{
+  "Header": {
+    "title": "One Stop Solution For All Eye Related Problems."
+  },
+  "About": {
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Why": [
+      "Advance Technology",
+      "Errorless Diagnosis",
+      "Home Visit Faacility",
+      "24*7 Working Lab"
+    ],
+    "Why2": [
+      "Full Time Pathologist",
+      "Well Experienced Technical Staff",
+      "Health Checkup Plans",
+      "Semen Analysis"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "img": "img/services/Lasik.png",
+      "name": "Q-Lasik",
+      "text": "Q-Lasik is a State of art technology for those who want permanent removal of spectacles/contact lenses."
+    },
+    {
+      "img": "img/services/cornea.png",
+      "name": "Cornea",
+      "text": "Cornea is the clear front surface of the eye. It lies directly in front of the iris and pupil, and it allows light to enter the eye."
+    },
+    {
+      "img": "img/services/Diabetic.png",
+      "name": "Diabetic Retinopathy",
+      "text": "Diabetic retinopathy is a complication of diabetes and causes damage to the retina (Microangiopathy)."
+    },
+    {
+      "img": "img/services/Retinal.png",
+      "name": "Retinal Detachment",
+      "text": "It is an emergency condition in which Retina gets separated/pulled away from its normal position."
+    },
+    {
+      "img": "img/services/Squint.png",
+      "name": "Squint",
+      "text": "Squint is a condition where the eyes point in different directions. One eye may turn inwards, outwards, upwards or downwards while the other eye may look differently."
+    },
+    {
+      "img": "img/services/Cataract.png",
+      "name": "Cataract",
+      "text": "A cataract is clouding or opacity of the lens inside the eye. It causes gradual blurring of vision and finally blindness."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Dr. Shruti Gajera",
+      "job": "M.S Ophthalmology (Mumbai)",
+      "job2": "FMR, FMC (SCEH-Delhi)"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Dr. Vibha Gajera Mangukiya",
+      "job": "M.D Pathology (Mumbau)"
+    }
+  ],
+  "Contact": {
+    "address": "1st Floor, Sadguru Plaza, B/S Kamlaba Hospital, Ved Road,Surat. ",
+    "phone": "Eye Hospital : +91-8200442466",
+    "phone2": "Laboratory : +91-9537400707",
+    "email": "experteyecare21@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
