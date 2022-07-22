@@ -5,7 +5,7 @@ import img4 from "../image/s4.png";
 
 export const Features = props => {
   return (
-    <div id="features" className="text-center">
+    <div id="features" className="text-center feature_slider_wave">
       <div className="container">
         <div className="mt-20 Specialities_Wrapper">
           <div className="section-title">

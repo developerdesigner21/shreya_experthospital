@@ -24,11 +24,11 @@ export const Navigation = props => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a
-            className="navbar-brand page-scroll"
-            href="/#features"
-            style={{ marginTop: "-39px", marginLeft: "-70px" }}
+            className="navbar-brand page-scroll link_logo"
+            href="/"
+            // style={{ marginTop: "-39px", marginLeft: "-70px" }}
           >
-            <img src={LOGO} height="100" alt="img" />
+            <img className="main_logo" src={LOGO} alt="img" />
           </a>{" "}
         </div>
 
@@ -38,57 +38,49 @@ export const Navigation = props => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="/#about" className="page-scroll">
                 About
               </a>
             </li>
             <li>
-              <a href="#features" className="page-scroll">
+              <a href="/#features" className="page-scroll">
                 Featues
               </a>
             </li>
             <li className="Service_Drop_Wrapper">
-              <a href="#services" className="page-scroll">
+              <a className="page-scroll">
                 Services
               </a>
               <ul className="Service_dropDown">
                 <li>
-                  <a href="/pathology">Pathology</a>
+                  <a onClick={()=>{navigate('/pathology')}}>Pathology</a>
                 </li>
                 <li>
-                  <a href="/ophthalmology">Ophthalmology</a>
+                  <a onClick={()=>{navigate('/ophthalmology')}}>Ophthalmology</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/gallery" className="page-scroll">
+              <a onClick={()=>{navigate('/gallery')}} className="page-scroll">
                 Gallery
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+              <a href="/#testimonials" className="page-scroll">
                 Testimonials
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a href="/#team" className="page-scroll">
                 Team
               </a>
             </li>
             <li className="contact_wrp">
-              <span
-                onClick={ContactBtn}
-                className="btn btn-custom btn-lg page-scroll"
-                style={{
-                  color: "white",
-                  borderRadius: "25px",
-                  padding: "11px 27px",
-                  marginTop: "5px",
-                  fontSize: "15px",
-                }}
+              <a
+                href="/#contact"
               >
                 Contact Us
-              </span>
+              </a>
             </li>
           </ul>
         </div>

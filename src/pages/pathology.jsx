@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Navigation } from "../components/navigation";
 import { Contact } from "../components/contact";
@@ -20,6 +20,7 @@ import grid4 from "../image/grid4.jpg";
 import Pathback from "../image/pathback2.png";
 import { Carousel } from "react-responsive-carousel";
 import Testback from "../image/testback1.png";
+import JsonData from "../data/data.json";
 
 const initialState = {
   name: "",
@@ -27,6 +28,10 @@ const initialState = {
   message: "",
 };
 export const Pathology = (props) => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
   return (
     <>
       <div>
@@ -64,7 +69,7 @@ export const Pathology = (props) => {
                   // height:"390px"
                 }}
               >
-                <div class="card-body" >
+                <div class="card-body">
                   <h5
                     class="card-title"
                     style={{
@@ -112,17 +117,17 @@ export const Pathology = (props) => {
                     <li>S. Creatinine</li>
                   </ul>
                   <div>
-                  <img
-                    src={Price1}
-                    style={{
-                      height: "200px",
-                      width: "350px",
-                      marginTop: "25%",
-                      float: "right",
-                      marginRight: "-55px",
-                      marginBottom:"-2%"
-                    }}
-                  />
+                    <img
+                      src={Price1}
+                      style={{
+                        height: "200px",
+                        width: "350px",
+                        marginTop: "25%",
+                        float: "right",
+                        marginRight: "-55px",
+                        marginBottom: "-2%",
+                      }}
+                    />
                   </div>
                 </div>
               </div>
@@ -138,7 +143,6 @@ export const Pathology = (props) => {
                   marginRight: "30px",
                   boxShadow: "5px 10px 18px #D3D3D3",
                   // height:"390px"
-
                 }}
               >
                 <div class="card-body">
@@ -780,24 +784,43 @@ export const Pathology = (props) => {
                     }}
                   >
                     <li>Allergy Test-Drugs</li>
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.2400/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.2400/-)
+                    </span>
                     <li>Allergy Test-Food Non Veg.</li>
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.1500/-)</span>
-                    <li>Allergy Test-Food Veg.<span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.2500/-)</span></li>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.1500/-)
+                    </span>
+                    <li>
+                      Allergy Test-Food Veg.
+                      <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                        (Rs.2500/-)
+                      </span>
+                    </li>
                     <li>Allergy Test-Pollens+Contact</li>
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.2000/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.2000/-)
+                    </span>
                     <li>Allergy Test-Food Veg.+Pollens+Contact</li>
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.3000/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.3000/-)
+                    </span>
                     <li>Allergy Test-Food Veg.+Pollens+Contact</li>
                     <span>+Drugs</span>
                     <br />
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.4500/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.4500/-)
+                    </span>
                     <li>Allergy Test-Food Veg.+Non Veg.+Pollens+Contact</li>
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.4000/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.4000/-)
+                    </span>
                     <li>Allergy Test-Food Veg.+Pollens+Contact</li>
                     <span style={{}}>+Drugs+Non Veg</span>
                     <br />
-                    <span style={{marginLeft:"3px",fontWeight:"bolder"}}>(Rs.5000/-)</span>
+                    <span style={{ marginLeft: "3px", fontWeight: "bolder" }}>
+                      (Rs.5000/-)
+                    </span>
                     {/* <li>Allergy Test</li> */}
                   </ul>
                   {/* <img
@@ -974,86 +997,84 @@ export const Pathology = (props) => {
             </div>
             <br />
             <br />
-            
           </div>
-          
         </div>
         <div
-        className="OurSpecialities_Wraapper"
-        // data-aos="fade-up"
-        // data-aos-duration="2000"
-        // data-aos-easing="ease-in-back"
-      >
-        <div className="Title">
-          <h2>Our Instruments</h2>
-        </div>
-        <div className="Specialities_Grid_Content">
-          <ul>
-            <div className="grid-item1 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid1} alt="image" style={{height:"230px"}}/>
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>Modular Operation Theatres</p>
-                </div>
-              </li>
-            </div>
-            <div className="grid-item2 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid4} alt="image" style={{height:"230px"}} />
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>Easten Gujarat's the first Japanese City Scan Machine</p>
-                </div>
-              </li>
-            </div>
-            <div className="grid-item3 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid2} alt="image" style={{height:"230px"}}/>
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>lorem ksf sje eod skemdme sjend sle ske</p>
-                </div>
-              </li>
-            </div>
-            <div className="grid-item4 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid2} alt="image" style={{height:"230px"}}/>
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>lorem ksf sje eod skemdme sjend sle ske</p>
-                </div>
-              </li>
-            </div>
-            <div className="grid-item5 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid1} alt="image" style={{height:"230px"}}/>
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>lorem ksf sje eod skemdme sjend sle ske</p>
-                </div>
-              </li>
-            </div>
-            <div className="grid-item6 grid-item-cmn">
-              <li className="grid-hvr">
-                <img src={grid4} alt="image" style={{height:"230px"}}/>
-              </li>
-              <li>
-                <div className="Grid-Content">
-                  <p>lorem ksf sje eod skemdme sjend sle ske</p>
-                </div>
-              </li>
-            </div>
-          </ul>
+          className="OurSpecialities_Wraapper"
+          // data-aos="fade-up"
+          // data-aos-duration="2000"
+          // data-aos-easing="ease-in-back"
+        >
+          <div className="Title">
+            <h2>Our Instruments</h2>
+          </div>
+          <div className="Specialities_Grid_Content">
+            <ul>
+              <div className="grid-item1 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid1} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>Modular Operation Theatres</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item2 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid4} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>Easten Gujarat's the first Japanese City Scan Machine</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item3 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid2} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item4 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid2} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item5 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid1} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item6 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid4} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
-      </div>
-      <Contact />
+      <Contact data={landingPageData.Contact}/>
     </>
   );
 };

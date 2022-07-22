@@ -102,7 +102,7 @@ hr {
   color: #555;
   font-size: 18px;
   font-weight: 400;
-  padding: 8px 2px;
+  padding: 2px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
   color: #333;
@@ -151,7 +151,8 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
 }
 .section-title h2 {
   position: relative;
@@ -679,21 +680,16 @@ label {
 }
 .Specialities_Wrapper {
   position: relative;
-  .section-title {
-    h2 {
-      margin: 6rem 0 0;
-    }
-  }
-  &::before {
-    content: "";
-    width: calc(100% + 608px);
-    height: 160px;
-    background: url(../img/wave.png);
-    background-size: cover;
-    position: absolute;
-    top: -156px;
-    left: -225px;
-  }
+  // &::before {
+  //   content: "";
+  //   width: 168%;
+  //   height: 140px;
+  //   background: url(../img/wave1.svg);
+  //   background-size: cover;
+  //   position: absolute;
+  //   top: -50%;
+  //   left: -34%;
+  // }
   .Wave_Wrp {
     position: absolute;
     top: 0;
@@ -813,7 +809,7 @@ label {
 
 .Hostpital_Wrapper {
   .Hospital_Content {
-    padding: 10rem 0 15rem;
+    padding: 9rem 0 1rem;
     margin: 3rem 0 0rem;
     background-image: linear-gradient(to right, #3366cc 0%, #5ca9fb 100%);
     color: #fff;
@@ -841,11 +837,11 @@ label {
   }
   .SpecialitiesWave {
     position: absolute;
-    bottom: 209px;
+    bottom: 45%;
     width: 127%;
     height: 46px;
     left: -285px;
-    transform: rotate(4deg);
+    // transform: rotate(4deg);
   }
 }
 
@@ -902,44 +898,53 @@ label {
   .Service_dropDown {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 34px;
     background: #fff;
-    width: 111px;
     box-shadow: 0px 3px 3px 2px #eeeeeeb5;
     border-radius: 5px;
-    padding: 0 0.4rem;
-    &::before {
-      content: "";
-      width: 15px;
-      height: 15px;
-      background: #eee;
-      position: absolute;
-      transform: rotate(45deg);
-      right: 46%;
-      top: -7px;
-      z-index: -1;
-      animation: opi 3s linear infinite;
-      @keyframes identifier {
-        0% {
-          opacity: 0;
-          transition: all 0.3s ease-in-out;
-        }
-        50% {
-          opacity: 0.5;
-          transition: all 0.3s ease-in-out;
-        }
-        80% {
-          opacity: 0.9;
-          transition: all 0.3s ease-in-out;
-        }
-        100% {
-          opacity: 1;
-          transition: all 0.3s ease-in-out;
-        }
-      }
+    padding: 1rem 1rem;
+    z-index: 100;
+    // width: 100%;
+    // &::before {
+    //   &:hover {
+    //     .Service_dropDown {
+    //       display: block;
+    //     }
+    //   }
+    //   content: "";
+    //   width: 15px;
+    //   height: 15px;
+    //   background: #eee;
+    //   position: absolute;
+    //   transform: rotate(45deg);
+    //   right: 46%;
+    //   top: -7px;
+    //   z-index: -1;
+    //   animation: opi 3s linear infinite;
+    //   @keyframes identifier {
+    //     0% {
+    //       opacity: 0;
+    //       transition: all 0.3s ease-in-out;
+    //     }
+    //     50% {
+    //       opacity: 0.5;
+    //       transition: all 0.3s ease-in-out;
+    //     }
+    //     80% {
+    //       opacity: 0.9;
+    //       transition: all 0.3s ease-in-out;
+    //     }
+    //     100% {
+    //       opacity: 1;
+    //       transition: all 0.3s ease-in-out;
+    //     }
+    //   }
+    // }
+    ul{
+      padding: 0.8rem 1rem;
     }
     li {
-      padding: 0.6rem 0.5rem;
+      padding: 0.8rem 1rem;
       margin: 0 0 0.3rem;
       background: #eee;
       transition: all 0.3s ease-in-out;
@@ -957,6 +962,7 @@ label {
         color: #333;
         font-size: 1em;
         text-transform: capitalize;
+        cursor: pointer;
         transition: all 0.3s ease-in-out;
       }
     }
@@ -974,11 +980,125 @@ li.contact_wrp.active {
     border: none !important;
   }
 }
+.contact_wrp{
+  background: linear-gradient(to right, #3366cc 0%, #5ca9fb 100%);
+  border-radius: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0px;
+  a{
+    margin: 9px 15px !important
+  }
+}
+
+.gallery_section {
+  .gallery_title{
+    margin: 10rem 0% 3% 0% !important;
+  }
+  .image_grid{
+    border: 10px solid;
+    border-image: linear-gradient(to right,#3366cc  1%, #5ca9fb  100%) 100% 0 100% 0/5px 0 5px 0;
+    box-shadow: 1px 9px 10px 0px rgb(0 0 0 / 20%);
+    background:#f6f6f6;
+    padding:15px;
+    .image_main{
+      padding: 10px;
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        img {
+          transform: scale(1.05);
+          transition: all 0.3s ease-in-out;
+          border-radius: 10px !important ;
+        }
+      }
+      img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .image_title{
+        background: #5bc3cd29;
+        // background: #5ca9fb;
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 0px 0px 10px 10px;
+        span{
+          font-size: 17px;
+          color: #333;
+          padding: 0px 10px;
+          font-weight:500;
+        }
+      }
+    }
+  }
+}
+
+.banner_one{
+  position: relative;
+  .banner_one_button{
+    position: absolute;
+    right: 28%;
+    bottom: 12%;
+    z-index: 1000;
+  }
+}
+
+.banner_two{
+  position: relative;
+  .banner_two_button{
+    position: absolute;
+    left: 10.6%;
+    bottom: 8%;
+    z-index: 1000;
+  }
+}
+
+.link_logo{
+  .main_logo{
+    height: 100px;
+  }
+  margin-top: -39px;
+  margin-left: -70px;
+}
+
+
+@media only screen and (max-width: 1445px) {
+  .banner_one_button{
+    right: 28% !important;
+
+    padding: 10px 20px;
+    font-size:13px;
+  }
+  .banner_two_button{
+    bottom: 7% !important;
+    padding: 10px 20px;
+    font-size:9px;
+  }
+  .Specialities_Wrapper {
+    &::before {
+      top: -50%;
+      left: -34%;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 1200px) {
+  .banner_one_button{
+    right: 26% !important;
+    padding: 10px 20px;
+    font-size:11px;
+  }
   .SpecialitiesWave {
     width: 147% !important;
     height: 46px;
+  }
+  .Specialities_Wrapper {
+    &::before {
+      top: -47%;
+      left: -34%;
+    }
   }
 }
 
@@ -987,12 +1107,62 @@ li.contact_wrp.active {
     width: 160% !important;
     height: 46px;
   }
+  .banner_one_button{
+    right: 27% !important;
+    bottom: 13% !important;
+    padding: 7px 14px;
+    font-size:10px;
+  }
+  .banner_two_button{
+    left: 10.5% !important;
+    bottom: 8% !important;
+    padding: 5px 10px;
+    font-size:9px;
+  }
+  .Specialities_Wrapper {
+    &::before {
+      top: -41%;
+      left: -34%;
+    }
+  }
 }
 @media only screen and (max-width: 768px) {
   .SpecialitiesWave {
     width: 160% !important;
     transform: rotate(3deg) !important;
     bottom: 180px !important;
+  }
+  .banner_one_button{
+    right: 26% !important;
+    bottom: 14% !important;
+    padding: 5px 10px;
+    font-size:8px;
+  }
+  .banner_two_button{
+    left: 10.5% !important;
+    bottom: 8% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
+  .Service_dropDown{
+    width: 100% !important;
+    padding: 0.5rem 0.5rem;
+  }
+  .Specialities_Wrapper {
+    &::before {
+      top: -23%;
+      left: -50%;
+    }
+  }
+  .link_logo{
+    .main_logo{
+      height: 69px;
+    }
+    margin-top: -22px;
+    margin-left: 0px;
+  }
+  #menu {
+    padding: 2px;
   }
 }
 
@@ -1012,8 +1182,32 @@ li.contact_wrp.active {
   #features .SpecialitiesGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .banner_one_button{
+    right: 24% !important;
+    bottom: 14% !important;
+    padding: 6px 12px;
+    font-size:7px;
+  }
+  .banner_two_button{
+    left: 10.5% !important;
+    bottom: 5% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .banner_one_button{
+    right: 18% !important;
+    bottom: 15% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
+  .banner_two_button{
+    left: 10.5% !important;
+    bottom: 5% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
   .Team_Wrapper #Team_Item {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1070,7 +1264,28 @@ li.contact_wrp.active {
     }
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .banner_one_button{
+    right: 17.5% !important;
+    bottom: 14% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
+}
 @media only screen and (max-width: 320px) {
+  .banner_one_button{
+    right: 14% !important;
+    bottom: 14% !important;
+    padding: 5px 10px;
+    font-size:7px;
+  }
+  .banner_two_button{
+    left: 10.3% !important;
+    bottom: 9% !important;
+    padding: 4px 8px;
+    font-size:6px;
+  }
   #features .SpecialitiesGrid {
     grid-template-columns: repeat(1, 1fr);
   }

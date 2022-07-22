@@ -3,6 +3,7 @@ import grid1 from "../image/grid1.JPG";
 import grid2 from "../image/grid2.jpg";
 import grid3 from "../image/grid3.png";
 import grid4 from "../image/grid4.jpg";
+import wave from "../image/wave2.svg"
 
 export const Specialities = () => {
   return (
@@ -117,7 +118,8 @@ export const Specialities = () => {
             </li>
            
           </ul>
-          <div className="SpecialitiesWave">
+          {/* <div className="SpecialitiesWave">
+            <img src={wave}></img>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style={{marginTop:"-60px"}}>
               <path
                 fill="#f6f6f6"
@@ -125,7 +127,7 @@ export const Specialities = () => {
                 d="M0,288L60,256C120,224,240,160,360,160C480,160,600,224,720,213.3C840,203,960,117,1080,96C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
               ></path>
             </svg>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

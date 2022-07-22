@@ -1,4 +1,4 @@
-import AboutUs from "../image/aboutus1.JPG";
+import AboutUs from "../image/aboutus1.jpg";
 
 export const About = props => {
   return (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Navigation } from "../components/navigation";
 import Cataract from "../image/Cataract.jpg";
@@ -9,6 +9,11 @@ import Glaucoma from "../image/glaucoma.jpg";
 import Oculopasty from "../image/oculoplasty.jpg";
 import Paediatric from "../image/paediatric.jpg";
 import { Contact } from "../components/contact";
+import grid1 from "../image/grid1.JPG";
+import grid2 from "../image/grid2.jpg";
+import grid3 from "../image/grid3.png";
+import grid4 from "../image/grid4.jpg";
+import JsonData from "../data/data.json";
 
 const initialState = {
   name: "",
@@ -16,6 +21,11 @@ const initialState = {
   message: "",
 };
 export const Ophthalmology = (props) => {
+  const [landingPageData, setLandingPageData] = useState({});
+  useEffect(() => {
+    setLandingPageData(JsonData);
+  }, []);
+  
   const ContactBtn = () => {
     <a href="#"></a>;
   };
@@ -523,7 +533,81 @@ export const Ophthalmology = (props) => {
         {/* </div> */}
       </div>
     </div>
-    <Contact />
+    <div
+          className="OurSpecialities_Wraapper"
+          // data-aos="fade-up"
+          // data-aos-duration="2000"
+          // data-aos-easing="ease-in-back"
+        >
+          <div className="Title">
+            <h2>Our Instruments</h2>
+          </div>
+          <div className="Specialities_Grid_Content">
+            <ul>
+              <div className="grid-item1 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid1} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>Modular Operation Theatres</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item2 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid4} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>Easten Gujarat's the first Japanese City Scan Machine</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item3 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid2} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item4 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid2} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item5 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid1} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+              <div className="grid-item6 grid-item-cmn">
+                <li className="grid-hvr">
+                  <img src={grid4} alt="image" style={{ height: "230px" }} />
+                </li>
+                <li>
+                  <div className="Grid-Content">
+                    <p>lorem ksf sje eod skemdme sjend sle ske</p>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+    <Contact data={landingPageData.Contact}/>
     </>
   );
 };

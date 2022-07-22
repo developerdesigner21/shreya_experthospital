@@ -1,7 +1,9 @@
 import Banner from "../image/poster1.png";
-import Banner1 from "../image/poster2.png"
+import Banner1 from "../image/poster2.png";
 import { Carousel } from "react-responsive-carousel";
-export const Header = props => {
+import { useNavigate } from "react-router-dom";
+
+export const Header = (props) => {
   return (
     <header id="header">
       {/* <div className="intro">
@@ -18,16 +20,19 @@ export const Header = props => {
   );
 };
 const BannerSection = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="Banner_Wrapper">
         <Carousel infiniteLoop showThumbs={false} autoPlay>
-          <div>
-            <img src={Banner} alt="banner" />
+          <div className="banner_one">
+            <img src={Banner} alt="banner" />.
+            <button type="button" class="btn btn-custom banner_one_button" onClick={()=>{navigate('/pathology')}}>know More?</button>
           </div>
 
-          <div>
+          <div className="banner_two">
             <img src={Banner1} alt="banner" />
+            <button type="button" class="btn btn-custom banner_two_button" onClick={()=>{navigate('/ophthalmology')}}>know More?</button>
           </div>
         </Carousel>
       </div>
